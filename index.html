@@ -18,216 +18,221 @@
         <div class="name">😁 Lavanya Rastogi</div>
         <div class="menu">
             <div class="menu-item home" onclick="renderHomePage()">Home</div>
-            <div class="menu-item">Education</div>
-            <div class="menu-item">Projects</div>
-            <div class="menu-item">Contact</div>
+            <div class="menu-item" onclick="scrollToEducation()">Education</div>
+            <div class="menu-item" onclick="scrollToProjects()">Projects</div>
+            <div class="menu-item" onclick="scrollToContacts()">Contact</div>
         </div>
     </header>
-    <div class="card">
-        <div class="card-text typewriter">
-            <span id="card-heading" style="font-size: 54px;">Welcome Aboard!</span>
-            <p class="card-description" id="type-text"></p>
+    <div class="main">
+        <div class="card">
+            <div class="card-text typewriter">
+                <span id="card-heading" style="font-size: 54px;">Welcome Aboard!</span>
+                <p class="card-description" id="type-text"></p>
+            </div>
+            <img src="assets/photo.jpg" alt="Picture" class="card-image"
+                style="height: 100%; width: 28%; min-width: 300px; min-height: 400px;" />
         </div>
-        <img src="assets/photo.jpg" alt="Picture" class="card-image"
-            style="height: 100%; width: 28%; min-width: 300px; min-height: 400px;" />
+        <div class="tech-stack">
+            <div class="heading">Tech Stack</div>
+            <div class="stack">
+                <div class="stack-item scale-up">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
+                            <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
+                            <path
+                                d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
+                                fill="white"></path>
+                        </g>
+                    </svg>
+                    <span>HTML</span>
+                </div>
+                <div class="stack-item scale-up">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
+                            <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
+                            <path
+                                d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
+                                fill="white"></path>
+                        </g>
+                    </svg>
+                    <span>CSS</span>
+                </div>
+                <div class="stack-item scale-up">
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512"
+                        style="height: 80px; width: 80px;" fill="#000000">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>
+                            <path
+                                d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Javascript</span>
+                </div>
+                <div class="stack-item scale-up">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z"
+                                fill="#E76F00"></path>
+                            <path
+                                d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z"
+                                fill="#E76F00"></path>
+                            <path
+                                d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z"
+                                fill="#5382A1"></path>
+                            <path
+                                d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z"
+                                fill="#5382A1"></path>
+                            <path
+                                d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z"
+                                fill="#5382A1"></path>
+                            <path
+                                d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z"
+                                fill="#5382A1"></path>
+                            <path
+                                d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z"
+                                fill="#5382A1"></path>
+                            <path
+                                d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z"
+                                fill="#5382A1"></path>
+                        </g>
+                    </svg>
+                    <span>Java</span>
+                </div>
+                <div class="stack-item scale-up">
+                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M27.6947 22.9999C27.883 22.6617 28 22.2807 28 21.9385V10.0613C28 9.71913 27.8831 9.33818 27.6947 9L16 16L27.6947 22.9999Z"
+                                fill="#00599C"></path>
+                            <path
+                                d="M17.0395 29.7433L26.9611 23.8047C27.2469 23.6336 27.5067 23.3382 27.695 23L16.0003 16L4.30566 23C4.49398 23.3382 4.75382 23.6337 5.03955 23.8047L14.9611 29.7433C15.5326 30.0855 16.468 30.0855 17.0395 29.7433Z"
+                                fill="#004482"></path>
+                            <path
+                                d="M27.6947 8.99996C27.5064 8.6617 27.2465 8.36629 26.9608 8.19521L17.0392 2.25662C16.4677 1.91446 15.5323 1.91446 14.9608 2.25662L5.03922 8.19521C4.46761 8.53729 4 9.37709 4 10.0613V21.9386C4 22.2807 4.11694 22.6618 4.30533 23L16 16L27.6947 8.99996Z"
+                                fill="#659AD2"></path>
+                            <path
+                                d="M16.0385 24C11.6061 24 8 20.4112 8 16C8 11.5888 11.6061 8 16.0385 8C18.8458 8 21.4674 9.47569 22.919 11.8618L19.4765 13.9265C18.7492 12.736 17.4399 12 16.0385 12C13.8222 12 12.0193 13.7944 12.0193 16C12.0193 18.2056 13.8222 20 16.0385 20C17.4362 20 18.7421 19.2681 19.4707 18.0832L22.9205 20.1359C21.4692 22.5234 18.8467 24 16.0385 24Z"
+                                fill="white"></path>
+                            <path
+                                d="M23 15.4948H21.9999V14.5H21.0001V15.4948H20V16.4895H21.0001V17.4844H21.9999V16.4895H23V15.4948Z"
+                                fill="white"></path>
+                            <path
+                                d="M27 15.5H25.9999V14.5H25.0001V15.5H24V16.4999H25.0001V17.5H25.9999V16.4999H27V15.5Z"
+                                fill="white"></path>
+                        </g>
+                    </svg>
+                    <span>C++</span>
+                </div>
+                <div class="stack-item scale-up">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path fill-rule="nonzero" clip-rule="nonzero"
+                                d="M7.58638 0.102166C7.8199 -0.0340553 8.10867 -0.0340553 8.34219 0.102166L14.5565 3.72717C14.7869 3.86157 14.9286 4.10825 14.9286 4.375V11.625C14.9286 11.8918 14.7869 12.1384 14.5565 12.2728L8.34219 15.8978C8.10867 16.0341 7.8199 16.0341 7.58638 15.8978L1.3721 12.2728C1.14168 12.1384 1 11.8918 1 11.625V4.375C1 4.10825 1.14168 3.86157 1.3721 3.72717L7.58638 0.102166ZM7.96429 14.3817L13.4286 11.1942V4.80578L7.96429 1.61828L2.5 4.80578V11.1942L7.96429 14.3817Z"
+                                fill="#000000"></path>
+                            <path fill-rule="nonzero" clip-rule="nonzero"
+                                d="M8.00017 5.5C6.61936 5.5 5.5 6.61936 5.5 8.00017C5.5 9.38097 6.61936 10.5003 8.00017 10.5003C8.71226 10.5003 9.3538 10.2036 9.81009 9.725C10.0959 9.4252 10.5706 9.41386 10.8704 9.69968C11.1703 9.9855 11.1816 10.4602 10.8958 10.76C10.1682 11.5232 9.13926 12.0003 8.00017 12.0003C5.79094 12.0003 4 10.2094 4 8.00017C4 5.79094 5.79094 4 8.00017 4C9.13445 4 10.1595 4.47309 10.8866 5.23069C11.1734 5.52954 11.1636 6.00432 10.8648 6.29112C10.5659 6.57793 10.0911 6.56817 9.80433 6.26931C9.3484 5.79424 8.70928 5.5 8.00017 5.5Z"
+                                fill="#000000"></path>
+                        </g>
+                    </svg>
+                    <span>C</span>
+                </div>
+            </div>
+        </div>
+        <div class="education" id="edu">
+            <span id="education-heading">Studied at</span>
+            <div id="education-div">
+                <div class="education-item scale-up">
+                    <img src="assets/school-grid.png" alt="school" style="width: 100%;" />
+                    La Martiniere Girls' College, Lucknow
+                    <span>~from 2010 to 2024</span>
+                </div>
+                <div class="education-item scale-up">
+                    <img src="assets/college.png" alt="college" style="width: 100%;" />
+                    JAYPEE Institute of Information and Technology, Noida
+                    <span>~from 2024 to 2028</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="carousel" id="carousel">
+            <div class="arrow prev" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+            </div>
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <a href="https://github.com/Lavanya24R/SweepIt"><img src="assets/minesweeper.png" alt="Slide 1"></a>
+                </div>
+                <div class="slide">
+                    <a href="https://github.com/Lavanya24R/Bomberman-Game"><img src="assets/bomberman game.png" alt="Slide 2"></a>
+                </div>
+                <div class="slide">
+                    <a href="https://github.com/Tanishq172006/Todo"><img src="assets/todo list.png" alt="Slide 3"></a>
+                </div>
+            </div>
+            <div class="arrow next" id="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg></div>
+        </div>
+
+        <div class="contacts" id="contact">
+            <span id="contact-heading">Contact Me</span>
+            <div class="contact-div">
+                <div class="contact-item scale-up">
+                    <a href="https://github.com/Lavanya24R" alt="github"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="40" height="40" fill="white" class="bi bi-github" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                        </svg> </a>
+                </div>
+                <div class="contact-item scale-up">
+                    <a href="https://www.linkedin.com/in/lavanya-rastogi-a39b10320/" alt="linkedin"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a>
+                </div>
+                <div class="contact-item scale-up">
+                    <a href="https://www.instagram.com/lavanya_rastogi01/" alt="instagram"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
+                </div>
+        </div>
     </div>
-    <div class="tech-stack">
-        <div class="heading">Tech Stack</div>
-        <div class="stack">
-            <div class="stack-item">
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path>
-                        <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path>
-                        <path
-                            d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z"
-                            fill="white"></path>
-                    </g>
-                </svg>
-                <span>HTML</span>
-            </div>
-            <div class="stack-item">
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path>
-                        <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path>
-                        <path
-                            d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z"
-                            fill="white"></path>
-                    </g>
-                </svg>
-                <span>CSS</span>
-            </div>
-            <div class="stack-item">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512"
-                    style="height: 80px; width: 80px;" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>
-                        <path
-                            d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z">
-                        </path>
-                    </g>
-                </svg>
-                <span>Javascript</span>
-            </div>
-            <div class="stack-item">
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path
-                            d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z"
-                            fill="#E76F00"></path>
-                        <path
-                            d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z"
-                            fill="#E76F00"></path>
-                        <path
-                            d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z"
-                            fill="#5382A1"></path>
-                        <path
-                            d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z"
-                            fill="#5382A1"></path>
-                        <path
-                            d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z"
-                            fill="#5382A1"></path>
-                        <path
-                            d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z"
-                            fill="#5382A1"></path>
-                        <path
-                            d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z"
-                            fill="#5382A1"></path>
-                        <path
-                            d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z"
-                            fill="#5382A1"></path>
-                    </g>
-                </svg>
-                <span>Java</span>
-            </div>
-            <div class="stack-item">
-                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path
-                            d="M27.6947 22.9999C27.883 22.6617 28 22.2807 28 21.9385V10.0613C28 9.71913 27.8831 9.33818 27.6947 9L16 16L27.6947 22.9999Z"
-                            fill="#00599C"></path>
-                        <path
-                            d="M17.0395 29.7433L26.9611 23.8047C27.2469 23.6336 27.5067 23.3382 27.695 23L16.0003 16L4.30566 23C4.49398 23.3382 4.75382 23.6337 5.03955 23.8047L14.9611 29.7433C15.5326 30.0855 16.468 30.0855 17.0395 29.7433Z"
-                            fill="#004482"></path>
-                        <path
-                            d="M27.6947 8.99996C27.5064 8.6617 27.2465 8.36629 26.9608 8.19521L17.0392 2.25662C16.4677 1.91446 15.5323 1.91446 14.9608 2.25662L5.03922 8.19521C4.46761 8.53729 4 9.37709 4 10.0613V21.9386C4 22.2807 4.11694 22.6618 4.30533 23L16 16L27.6947 8.99996Z"
-                            fill="#659AD2"></path>
-                        <path
-                            d="M16.0385 24C11.6061 24 8 20.4112 8 16C8 11.5888 11.6061 8 16.0385 8C18.8458 8 21.4674 9.47569 22.919 11.8618L19.4765 13.9265C18.7492 12.736 17.4399 12 16.0385 12C13.8222 12 12.0193 13.7944 12.0193 16C12.0193 18.2056 13.8222 20 16.0385 20C17.4362 20 18.7421 19.2681 19.4707 18.0832L22.9205 20.1359C21.4692 22.5234 18.8467 24 16.0385 24Z"
-                            fill="white"></path>
-                        <path
-                            d="M23 15.4948H21.9999V14.5H21.0001V15.4948H20V16.4895H21.0001V17.4844H21.9999V16.4895H23V15.4948Z"
-                            fill="white"></path>
-                        <path d="M27 15.5H25.9999V14.5H25.0001V15.5H24V16.4999H25.0001V17.5H25.9999V16.4999H27V15.5Z"
-                            fill="white"></path>
-                    </g>
-                </svg>
-                <span>C++</span>
-            </div>
-            <div class="stack-item">
-                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <path fill-rule="nonzero" clip-rule="nonzero"
-                            d="M7.58638 0.102166C7.8199 -0.0340553 8.10867 -0.0340553 8.34219 0.102166L14.5565 3.72717C14.7869 3.86157 14.9286 4.10825 14.9286 4.375V11.625C14.9286 11.8918 14.7869 12.1384 14.5565 12.2728L8.34219 15.8978C8.10867 16.0341 7.8199 16.0341 7.58638 15.8978L1.3721 12.2728C1.14168 12.1384 1 11.8918 1 11.625V4.375C1 4.10825 1.14168 3.86157 1.3721 3.72717L7.58638 0.102166ZM7.96429 14.3817L13.4286 11.1942V4.80578L7.96429 1.61828L2.5 4.80578V11.1942L7.96429 14.3817Z"
-                            fill="#000000"></path>
-                        <path fill-rule="nonzero" clip-rule="nonzero"
-                            d="M8.00017 5.5C6.61936 5.5 5.5 6.61936 5.5 8.00017C5.5 9.38097 6.61936 10.5003 8.00017 10.5003C8.71226 10.5003 9.3538 10.2036 9.81009 9.725C10.0959 9.4252 10.5706 9.41386 10.8704 9.69968C11.1703 9.9855 11.1816 10.4602 10.8958 10.76C10.1682 11.5232 9.13926 12.0003 8.00017 12.0003C5.79094 12.0003 4 10.2094 4 8.00017C4 5.79094 5.79094 4 8.00017 4C9.13445 4 10.1595 4.47309 10.8866 5.23069C11.1734 5.52954 11.1636 6.00432 10.8648 6.29112C10.5659 6.57793 10.0911 6.56817 9.80433 6.26931C9.3484 5.79424 8.70928 5.5 8.00017 5.5Z"
-                            fill="#000000"></path>
-                    </g>
-                </svg>
-                <span>C</span>
-            </div>
+    <footer>
+        <div class="footer-text">
+            Made with ❤️ by Lavanya Rastogi
         </div>
-    </div>
-    <div class="contacts">
-        <div class="contact-item">
-            <a href="https://github.com/Lavanya24R" alt="github"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-github"
-                viewBox="0 0 16 16">
-                <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-            </svg> </a>
-        </div>
-        <div class="contact-item">
-            <a href="https://www.linkedin.com/in/lavanya-rastogi-a39b10320/" alt="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-linkedin"
-                viewBox="0 0 16 16">
-                <path
-                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-            </svg></a>
-        </div>
-        <div class="contact-item">
-            <a href="https://www.instagram.com/lavanya_rastogi01/" alt="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-instagram"
-                viewBox="0 0 16 16">
-                <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-            </svg></a>
-        </div>
+    </footer>
 
     </div>
-
-
-
-
-
-    <script>
-        const dot = document.getElementById('dot');
-
-        window.addEventListener('mousemove', e => {
-            dot.style.left = e.pageX + 'px';
-            dot.style.top = e.pageY + 'px';
-        });
-
-        document.addEventListener("mousemove", (e) => {
-            const trail = document.createElement("div");
-            trail.classList.add("trail");
-            document.body.appendChild(trail);
-            trail.style.left = e.pageX + "px";
-            trail.style.top = e.pageY + "px";
-
-            setTimeout(() => {
-                trail.remove();
-            }, 500);
-        });
-
-        const typeText = document.getElementById("type-text");
-        const text = "Hello Everyone! I am Lavanya Rastogi, a passionate Developer, full time learner and mass explorer. \
-        From chaos to discipline my personality pendulums both. Perfectionism flows in my blood(as if my OCD won't let it🙄). \
-        I can slip inside a team like butter and also work independantly like a lone wolf. It's nice to see you here! \
-        My space welcomes You!🌏🪐✨";
-
-        let i = 0;
-        typeText.textContent = "";
-        function typeWriter() {
-            if (i < text.length) {
-                typeText.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50); // Adjust speed here
-            }
-        }
-
-        typeWriter();
-
-        function renderHomePage() {
-            // window.scrollTo({
-            //     top: 0,
-            //     behavior: 'smooth'
-            // });
-            window.location.href = "index.html";
-        }
-
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

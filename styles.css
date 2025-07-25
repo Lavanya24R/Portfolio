@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-header {
+.header {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -118,9 +118,6 @@ header {
   text-align: center;
   justify-content: center;
   overflow: hidden;
-  /* animation:
-    typing 4s steps(30, end),
-    blink-caret .75s step-end infinite; */
 }
 
 .fade-in {
@@ -142,12 +139,6 @@ header {
     width: 100%;
   }
 }
-
-/* 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white }
-} */
 
 .tech-stack {
   display: flex;
@@ -324,4 +315,74 @@ footer {
   text-transform: capitalize;
   text-shadow: 0 8px 16px rgba(255, 255, 255, 0.316),
     0 0 10px rgba(255, 255, 255, 0.316);
+}
+input, textarea {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+.email-form {
+  width: 100%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+.email-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.form-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+input.form-control,
+textarea.form-control {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  background-color: #fff;
+  outline: none;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #959595, #676767, #3f3f3f);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+button.btn:hover {
+  background: linear-gradient(to right, #3f3f3f, #676767, #959595);
 }
